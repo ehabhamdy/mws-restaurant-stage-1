@@ -80,6 +80,7 @@ section {
   text-align: center;
   text-transform: uppercase;
 } */
+
 #footer {
   background-color: #444;
   color: #aaa;
@@ -87,7 +88,6 @@ section {
   letter-spacing: 1px;
   text-align: center;
   padding: 25px 0 25px 0;
-
 }
 
 /* ====================== Navigation ====================== */
@@ -189,26 +189,55 @@ nav h1 a {
 /* ====================== Restaurant Listing ====================== */
 
 #restaurants-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around;
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
+  padding: 8px 15px 60px;
   text-align: center;
 }
 
 #restaurants-list li {
+  display: block;
   background-color: #fff;
   border: 2px solid #ccc;
   font-family: Arial, sans-serif;
-  margin: 15px;
+  margin-bottom: 15px;
   min-height: 380px;
-  padding: 0 30px 25px;
+  padding: 0 0px 25px;
   text-align: left;
-  width: 270px;
+  width: 100%;
+}
+
+#restaurants-list li h1 {
+  padding: 0 15px;
+}
+
+#restaurants-list li p {
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 500px) {
+  #restaurants-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f3f3f3;
+    list-style: outside none none;
+    margin: 0;
+    padding: 30px 15px 60px;
+    text-align: center;
+  }
+  #restaurants-list li {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    font-family: Arial, sans-serif;
+    margin: 15px;
+    min-height: 380px;
+    padding: 0 30px 25px;
+    text-align: left;
+    width: 270px;
+  }
 }
 
 #restaurants-list .restaurant-img {
@@ -269,7 +298,7 @@ nav h1 a {
   width: 100%;
 }
 
-@media screen and (min-width: 735px){
+@media screen and (min-width: 735px) {
   .inside #map-container {
     background: blue none repeat scroll 0 0;
     height: 87%;
@@ -279,6 +308,7 @@ nav h1 a {
     width: 50%;
   }
 }
+
 .inside #map {
   background-color: #ccc;
   height: 100%;
@@ -350,7 +380,7 @@ nav h1 a {
   padding-bottom: 1pt;
 }
 
-@media screen and (min-width: 499px) and (max-width: 735px) { 
+@media screen and (min-width: 499px) and (max-width: 735px) {
   #reviews-list {
     display: flex;
     flex-direction: row;

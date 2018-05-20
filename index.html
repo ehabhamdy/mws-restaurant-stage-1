@@ -2,6 +2,7 @@
 <html>
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
   <link rel="stylesheet" href="css/styles.css">
   <title>Restaurant Reviews</title>
@@ -34,17 +35,6 @@
     </section>
   </main>
 
-  <script>
-    if (navigator.serviceWorker) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('sw.js').then(function (registration) {
-          console.log('ServiceWorker registration successful');
-        }, function (err) {
-          console.log('ServiceWorker registration failed');
-        });
-      });
-    }
-  </script>
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtYBoTSZCxdzy_fRccByveNsR4qCrefbk&libraries=places&callback=initMap"></script>

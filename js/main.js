@@ -8,6 +8,7 @@ var markers = []
  * Fetch neighborhoods and cuisines as soon as the page is loaded.
  */
 document.addEventListener('DOMContentLoaded', (event) => {
+  // DBHelper.registerServiceWorker();
   fetchNeighborhoods();
   fetchCuisines();
 });
@@ -159,6 +160,7 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('a');
   more.innerHTML = 'View Details';
   //more.setAttribute('tabindex', tabIndex.toString());
+  more.setAttribute('role', 'button');
   more.setAttribute('aria-label', 'View Details for ' + restaurant.name);
   more.href = DBHelper.urlForRestaurant(restaurant);
   li.append(more)
