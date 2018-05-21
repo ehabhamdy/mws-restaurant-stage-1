@@ -166,12 +166,24 @@ nav h1 a {
 }
 
 .filter-options h2 {
-  padding-top: 10px;
+  padding-top: 20px;
   color: white;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1;
   margin: 0 20px;
+}
+
+@media screen and (max-width: 573px) {
+  #neighborhoods-select {
+    width: 115px;
+  }
+  #cuisines-select {
+    width: 100px;
+  }
+  .filter-options h2 {
+    padding-top: 10px;
+  }
 }
 
 .filter-options select {
